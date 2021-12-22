@@ -1,7 +1,7 @@
 app.initializers.add('nbflarum-discussion-market', () => {
-  
+  console.log("init discussmarket")
   app.extensionData
-    .for('nb-discussion-market')
+    .for('nbflarum-discussion-market')
     .registerSetting(
         {
           setting: 'discussmarket.tags',

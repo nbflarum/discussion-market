@@ -10,12 +10,6 @@
     "forum": ""
   },
   "homepage": "https://nbdomain.com",
-    "funding": [
-        {
-            "type": "website",
-            "url": "https://opencollective.com/fof/donate"
-        }
-    ],
   "require": {
     "flarum/core": "^1.0.0"
   },
@@ -29,12 +23,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Nb\\DiscussionMarket\\": "src/"
+      "Nbflarum\\DiscussionMarket\\": "src/"
     }
   },
   "extra": {
     "flarum-extension": {
-      "title": "NB Discussion Market",
+      "title": "Discussion Market",
       "category": "feature",
       "icon": {
         "name": "fas fa-th-large",
