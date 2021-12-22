@@ -1,4 +1,5 @@
-app.initializers.add('nb-discussion-market', () => {
+app.initializers.add('nbflarum-discussion-market', () => {
+  
   app.extensionData
     .for('nb-discussion-market')
     .registerSetting(
