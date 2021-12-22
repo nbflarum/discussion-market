@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Nb\DiscussionMarket;
+namespace Nbflarum\DiscussionMarket;
 
 use Flarum\Api\Serializer\BasicDiscussionSerializer;
 use Flarum\Extend;

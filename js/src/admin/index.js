@@ -8,12 +8,5 @@ app.initializers.add('nbflarum-discussion-market', () => {
           label: 'Enabled Tags (separate by , )',
           type: 'text'
         }
-      )
-      .registerSetting(
-        {
-          setting: 'discussmarket.abcd',
-          label: 'Enabled Tags (separate by , )',
-          type: 'bool'
-        }
-    );
+      );
 });
