@@ -24,7 +24,7 @@ import DiscussionThumbnail from './components/DiscussionThumbnail';
 const find = (obj, clazz) =>
     obj && obj.children && obj.children.filter((e) => get(e, 'attrs.className', '').indexOf(clazz) !== -1)[0];
 
-app.initializers.add('nb-discussion-market', () => {
+app.initializers.add('nbflarum-discussion-market', () => {
     Discussion.prototype.customThumbnail = Model.attribute('itemThumbnail');
     override(DiscussionListItem.prototype, 'view', function (original) {
         //return original();
@@ -121,7 +121,7 @@ app.initializers.add('nb-discussion-market', () => {
         );
         let marketTags = app.forum.attribute("discussmarket.tags");
         if(!marketTags) return normal_return;
-        marketTags = marketTags.toLowerCase().split(';');
+        marketTags = marketTags.toLowerCase().split(',');
         if (marketTags.indexOf(tags) === -1) {
             return normal_return;
         }
@@ -265,7 +265,7 @@ app.initializers.add('nb-discussion-market', () => {
 
          //console.log(app.forum.data.attributes)
         if(!marketTags) return normal_return;
-        marketTags = marketTags.toLowerCase().split(';');
+        marketTags = marketTags.toLowerCase().split(',');
 
         if (marketTags.indexOf(tags) === -1) {
             return normal_return;
